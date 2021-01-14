@@ -1,0 +1,163 @@
+header {
+  text-align: center;
+}
+
+.App {
+  width: 80%;
+  margin: auto;
+  position: relative
+}
+
+h1 {
+  font-size: 5em;
+  text-transform: uppercase;
+  transition: all 0.7s ease-out;
+}
+
+h1:hover {
+  color: transparent;
+  -webkit-text-stroke: 3px rgb(208, 255, 0);
+}
+
+.title{
+  margin-top: 2em;
+  margin-left: 2em;
+  border-bottom: 5px solid black;
+  max-width: 5%;
+  transition: all 0.2s ease-out;
+}
+
+.title:hover{
+  max-width: 0%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+
+}
+
+.flex:last-of-type {
+margin: 3em auto;
+}
+
+.Card {
+  width: 11em;
+  height: 13em;
+  border-radius: 16px;
+  box-shadow: 1px 8px 20px 0 rgba(134, 147, 171, 0.4);
+  margin: 1em;
+  padding: 0.3em 2em;
+  position: relative;
+  display: block;
+  transition: all 0.4s ease-out;
+}
+
+.Card:hover{
+  -webkit-transform:scale(1.1);
+  cursor: pointer;
+  background-color:  rgb(208, 255, 0);
+}
+
+.Card-text{
+  position: absolute;
+  bottom: 1em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+p{
+  line-height: 1.5em;
+  font-size: 0.8em;
+}
+
+span {
+  font-weight: 700;
+}
+
+.Card-detail {
+  width: 60%;
+  border-radius: 16px;
+  box-shadow: 1px 8px 20px 0 rgba(134, 147, 171, 0.4);
+  margin: 2em auto;
+  padding: 3em;
+  transition: all 0.2s ease-out;
+  background-color: rgb(252, 255, 220);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+}
+
+.card-detail-flex{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+}
+
+.Card-detail h2 {
+  font-size: 3em;
+}
+
+.info {
+  width: 30%;
+}
+
+.intro {
+  width: 60%;
+}
+
+.page {
+  margin-bottom: 3em;
+}
+
+button {
+  margin-top: 1em;
+  margin-left: 3em;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid  rgb(208, 255, 0) ;
+  padding: 0.5em 1em;
+  font-weight: 700;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  }
+
+  button:hover{
+    border-bottom: 2px solid  black;
+  }
+
+
+/*------ page transitions ------*/
+
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear 400ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 150ms linear;
+}
+
